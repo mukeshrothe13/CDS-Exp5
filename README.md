@@ -1,170 +1,38 @@
-# Aim
-To learn the execution and use of if statements & switch in c++.
 
-# Software Used
-VS Code
+## Aim
+To understand and implement `if` statements and `switch` statements in C++.
 
-# Problem Statement
-1.) Write a c++ program to check if the year is a leap year.
-2.) Write a c++ program to validate the password.
-3.) Write a c++ program to print days of week.
-4.) Write a c++ program to make a simple calculator.
-5.) Write a c++ program to evaluate grades.
+## Software Used
+- VS Code
 
-# Theory
-Use if to specify a block of code to be executed, if a specified condition is true.
+## Problem Statements
 
-Use else to specify a block of code to be executed, if the same condition is false.
+1. **Grade Evaluator**
+   - Write a C++ program to evaluate and display grades based on user input.
 
-Use else if to specify a new condition to test, if the first condition is false.
+2. **Leap Year Checker**
+   - Write a C++ program to determine if a given year is a leap year.
 
-Use switch to specify many alternative blocks of code to be executed.
+3. **Password Validator**
+   - Write a C++ program to validate a user’s password based on specified criteria.
 
-The switch statement in C++ is a flow control statement that is used to execute the different blocks of statements based on the value of the given expression. We can create different cases for different values of the switch expression. We can specify any number of cases in the switch statement but the case value can only be of type int or char.
+4. **Simple Calculator**
+   - Write a C++ program to create a basic calculator that performs arithmetic operations.
+   - 
+5. **Days of the Week**
+   - Write a C++ program to print the days of the week based on user input.
+
+## Theory
+
+- **`if` Statement**: Used to execute a block of code if a specified condition is true.
+- **`else` Statement**: Executes a block of code if the condition in the `if` statement is false.
+- **`else if` Statement**: Tests a new condition if the previous `if` condition is false.
+- **`switch` Statement**: Allows the execution of different blocks of code based on the value of an expression. It can have multiple `case` labels for different values and only supports `int` or `char` types for the expression.
 
 # Program Codes
 
 ```javascript
-//Leap Year
-#include<iostream>
-using namespace std;
-int main()
-{
-    int y;
-    char c;
-    cout<<"Enter year to check: ";
-    cin>>y;
-    if ( y%4==0 && y%100!=0 || y%400==0 )
-    { cout<<y<<" is a leap year";}
-    else
-    { cout<<y<<" is not a leap year";}
-    return 0;
-}
-
-//Password Validation
-#include<iostream>
-using namespace std;
-int main()
-{
-   string password;
-   cout << "Enter the password: ";
-   cin >> password;
-   if (password == "secret")
-   {
-    cout << "Access Granted ";
-   }
-   else
-   { 
-    cout<< "Access Denied";
-   }
-   return 0;
-}
-
-//Days of Week
-#include<iostream>
-using namespace std;
-int main()
-{
-    int a,b,c, choice ;
-    cout << "DAY"<<endl;
-    cout << "1: Monday"<<endl;
-    cout << "2: Tuesday"<<endl;
-    cout << "3: Wednesday"<<endl;
-    cout << "4: Thursday"<<endl;
-    cout << "5: Friday"<<endl;
-    cout << "6: Saturday"<<endl;
-    cout << "7: Sunday"<<endl;
-    cout<<"Enter number of day: ";
-    cin>>choice;
-switch(choice)
-{
-{ case 1 :
-cout<< "Day is Monday";
-}
-break ;
-{ case 2 :
-cout<< "Day is Tuesday";
-}
-break ;
-{ case 3 :
-cout<< "Day is Wednesday";
-}
-break ;{ case 4 :
-cout<< "Day is Thursday";
-}
-break ;
-{ case 5 :
-cout<< "Day is Friday";
-}
-break ;
-{
- case 6 :
-cout<< "Day is Saturday";
-}
-break ;
-{ case 7 :
-cout<< "Day is Sunday";
-}
-}
-}
-
-//Calculator
-#include<iostream>
-using namespace std;
-int main()
-{
-    float a,b,c ;
-
-    int choice;
-    cout << "Calculator"<<endl;
-    cout << "1: Addition"<<endl;
-    cout << "2: Subtraction"<<endl;
-    cout << "3: Multiplication"<<endl;
-    cout << "4: Division"<<endl;
-    cout<<"Enter operation choice: ";
-    cin>>choice;
-switch(choice)
-{
-    case 1 :
-    { float c;
-    cout<<"Enter numbers: ";
-    cin>>a>>b;
-    c=a+b;
-    cout<<"sum is = "<<c;
-    } 
-    break;
-    case 2 :
-    {
-        float c;
-    cout<<"Enter numbers: ";
-    cin>>a>>b;
-    c=a-b;
-    cout<<"difference is = "<<c;
-    }
-
-    break;
-case 3 :
-{ float c;
-    cout<<"Enter numbers: ";
-    cin>>a>>b;
-    c=a*b;
-    cout<<"product is = "<<c;
-}
-break;
-case 4 :
-
-{ float c;
-   cout<<"Enter numbers: ";
-    cin>>a>>b;
-    c=a/b;
-    cout<<"quotient is = "<<c;
-    }
-    break ;
-}
-return 0;
-}
-
-//Grade Evaluation
+//Mukesh Rothe  //23070123089  //EXP5
 #include <iostream>
 using namespace std;
 int main()
@@ -203,27 +71,178 @@ int main()
   return 0;
 }
 
+//Mukesh Rothe  //23070123089  //EXP5
+#include<iostream>
+using namespace std;
+int main()
+{
+    int year;
+    cout<<"Enter a year"<<endl;
+    cin>>year;
+    if(cin.fail())
+    {
+        cout<<"Invalid input";
+    }
+    else 
+    {
+        if((year%4==0 && year%100!=0) || (year%400==0))
+        {
+        cout<<year<<" is a leap year";
+        }
+        else 
+        {
+        cout<<year<<" is not a leap year";
+        }
+    }
+    return 0;
+}
+
+//Mukesh Rothe  //23070123089  //EXP5
+#include<iostream>
+using namespace std;
+int main()
+{
+   string password;
+   cout << "Enter the password: ";
+   cin >> password;
+   if (password == "secret")
+   {
+    cout << "Access Granted ";
+   }
+   else
+   { 
+    cout<< "Access Denied";
+   }
+   return 0;
+}
+
+//Mukesh Rothe  //23070123089  //EXP5
+#include<iostream>
+using namespace std;
+int main()
+{
+    float a,b,c ;
+
+    int choice;
+    cout << "Calculator"<<endl;
+    cout << "1: Addition"<<endl;
+    cout << "2: Subtraction"<<endl;
+    cout << "3: Multiplication"<<endl;
+    cout << "4: Division"<<endl;
+    cout<<"Enter operation choice: ";
+    cin>>choice;
+switch(choice)
+{
+    case 1 :
+    { float c;
+    cout<<"Enter numbers: ";
+    cin>>a>>b;
+    c=a+b;
+    cout<<"Sum is = "<<c;
+    } 
+    break;
+    case 2 :
+    {
+        float c;
+    cout<<"Enter numbers: ";
+    cin>>a>>b;
+    c=a-b;
+    cout<<"Difference is = "<<c;
+    }
+    break;
+case 3 :
+{ float c;
+    cout<<"Enter numbers: ";
+    cin>>a>>b;
+    c=a*b;
+    cout<<"Product is = "<<c;
+}
+break;
+case 4 :
+
+{ float c;
+   cout<<"Enter numbers: ";
+    cin>>a>>b;
+    c=a/b;
+    cout<<"Quotient is = "<<c;
+    }
+    break ;
+}
+return 0;
+}
+
+//Mukesh Rothe  //23070123089  //EXP5
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c, choice ;
+    cout << "DAY"<<endl;
+    cout << "1: Monday"<<endl;
+    cout << "2: Tuesday"<<endl;
+    cout << "3: Wednesday"<<endl;
+    cout << "4: Thursday"<<endl;
+    cout << "5: Friday"<<endl;
+    cout << "6: Saturday"<<endl;
+    cout << "7: Sunday"<<endl;
+    cout<<"Enter of day: ";
+    cin>>choice;
+switch(choice)
+{
+{ case 1 :
+cout<< "Day is Monday";
+}
+break ;
+{ case 2 :
+cout<< "Day is Tuesday";
+}
+break ;
+{ case 3 :
+cout<< "Day is Wednesday";
+}
+break ;{ case 4 :
+cout<< "Day is Thursday";
+}
+break ;
+{ case 5 :
+cout<< "Day is Friday";
+}
+break ;
+{
+ case 6 :
+cout<< "Day is Saturday";
+}
+break ;
+{ case 7 :
+cout<< "Day is Sunday";
+}
+}
+}
+
 ```
 
 # Output:
-1.) 5a_grades
+Grades-
 
-![image](https://github.com/user-attachments/assets/1df0b8e2-e9c7-4342-b4c3-cfca9ddb9ac7)
+![Screenshot 2024-08-22 213301](https://github.com/user-attachments/assets/0da7ab7a-f754-4a90-9bcc-aa5ffa774d77)
 
-2.) 5b_leapyear
+Leap Year-
 
-![image](https://github.com/user-attachments/assets/460e6007-11cf-4cc1-a37a-12c899c36ef5)
+![Screenshot 2024-08-22 213626](https://github.com/user-attachments/assets/d392d15a-3169-4ff5-83c4-be262cfd21f2)
 
-3.) 5c_pass
+Password-
 
-![image](https://github.com/user-attachments/assets/b72c8af6-7945-4260-a193-d95472369ccf)
+![Screenshot 2024-08-22 213631](https://github.com/user-attachments/assets/ebb67137-6d64-406f-96f2-9e7c20e4ef74)
 
-4.)
+Calculator-
 
-![image](https://github.com/user-attachments/assets/c1d422f2-0fa5-4f13-8a49-d94ecf8de0b0)
+![Screenshot 2024-08-22 213831](https://github.com/user-attachments/assets/b53ef4b8-bc2a-4dd0-88a6-9ad7394e4a32)
+
+Week- 
+
+![Screenshot 2024-08-22 214009](https://github.com/user-attachments/assets/3aa90a21-bc97-4c63-b063-158613d786cb)
 
 
+## Conclusion
 
-
-# Conclusion
-We learnt to use if statements and switch in c++.
+- We learned to use `if` statements and `switch` statements effectively in C++.
