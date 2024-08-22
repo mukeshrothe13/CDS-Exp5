@@ -1,13 +1,14 @@
+//Mukesh Rothe  //23070123089  //EXP5
 #include<iostream>
 using namespace std;
 int main()
 {
     int year;
-    cout<<"enter a year"<<endl;
+    cout<<"Enter a year"<<endl;
     cin>>year;
     if(cin.fail())
     {
-        cout<<"invalid input";
+        cout<<"Invalid input";
     }
     else 
     {
