@@ -1,3 +1,4 @@
+//Mukesh Rothe  //23070123089  //EXP5
 #include<iostream>
 using namespace std;
 int main()
@@ -19,7 +20,7 @@ switch(choice)
     cout<<"Enter numbers: ";
     cin>>a>>b;
     c=a+b;
-    cout<<"sum is = "<<c;
+    cout<<"Sum is = "<<c;
     } 
     break;
     case 2 :
@@ -28,7 +29,7 @@ switch(choice)
     cout<<"Enter numbers: ";
     cin>>a>>b;
     c=a-b;
-    cout<<"difference is = "<<c;
+    cout<<"Difference is = "<<c;
     }
     break;
 case 3 :
@@ -36,7 +37,7 @@ case 3 :
     cout<<"Enter numbers: ";
     cin>>a>>b;
     c=a*b;
-    cout<<"product is = "<<c;
+    cout<<"Product is = "<<c;
 }
 break;
 case 4 :
@@ -45,7 +46,7 @@ case 4 :
    cout<<"Enter numbers: ";
     cin>>a>>b;
     c=a/b;
-    cout<<"quotient is = "<<c;
+    cout<<"Quotient is = "<<c;
     }
     break ;
 }
