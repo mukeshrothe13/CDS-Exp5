@@ -18,7 +18,7 @@ To understand and implement `if` statements and `switch` statements in C++.
 
 4. **Simple Calculator**
    - Write a C++ program to create a basic calculator that performs arithmetic operations.
-   - 
+     
 5. **Days of the Week**
    - Write a C++ program to print the days of the week based on user input.
 
